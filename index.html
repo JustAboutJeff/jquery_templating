@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <article>
+             <h2>My post</h2>
+
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue.</p>
+        </article>
+        <div id="comment_area">
+             <h4>Comments</h4>
+
+            <ul id="comment_list">
+                <li>
+                    Nice post. Don't know how to read that Roman mumbo-jumbo, but I like it. <span class="author">Tom Jones</span>
+                </li>
+            </ul>
+            <button id="new_comment_button">New Comment</button>
+        </div>
+        <form class='hide' id='new_comment'>
+            <textarea autofocus></textarea>
+            <input type='text' id='authorName' />
+            <input type='submit' value='Add Comment' />
+        </form>
+        <!-- JavaScript -->
+        <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js
+'></script>
+        <script src='jquery_template.js'></script>
+        <script src='main.js'></script>
+
+
+        <script type="text/html" id="template">
+            <span data-content="comment"></span>
+            <span data-content="author" class='author'></span>
+        </script>
+
+
+    </body>
+</html>
